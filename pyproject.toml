@@ -1,0 +1,21 @@
+[project]
+name = "ankita-hello-cli"
+version = "0.1.0"
+description = "A simple CLI tool that greets you by Ankita"
+authors = [{ name = "Ankita Sinha", email = "ankitasinha2912@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "typer>=0.9.0",
+]
+license = {text = "MIT"}
+
+[project.scripts]
+ankita-hello-cli = "ankita_hello.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ankita_hello"]

@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/ankita_hello/__init__.py
+src/ankita_hello/main.py
+src/ankita_hello_cli.egg-info/PKG-INFO
+src/ankita_hello_cli.egg-info/SOURCES.txt
+src/ankita_hello_cli.egg-info/dependency_links.txt
+src/ankita_hello_cli.egg-info/entry_points.txt
+src/ankita_hello_cli.egg-info/requires.txt
+src/ankita_hello_cli.egg-info/top_level.txt

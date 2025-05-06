@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: ankita-hello-cli
+Version: 0.1.0
+Summary: A simple CLI tool that greets users
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typer
+
+# ankita-hello
+
+A simple Python package to greet users from the command line.
+
+## Installation
+
+Install from TestPyPI:
+
+```bash
+pip install -i https://test.pypi.org/simple/ ankita-hello
