@@ -6,3 +6,6 @@ This project demonstrates writing dev docs with MkDocs, diagrams, and Markdown.
 - Setup MkDocs with Material theme
 - Create architecture and design docs
 - Include diagrams (Mermaid + Draw.io)
+
+# To check
+# http://127.0.0.1:8000/

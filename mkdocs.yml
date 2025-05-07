@@ -1,17 +1,41 @@
-site_name: Developer Docs Practice
+site_name: Bootcamp Docs
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.progressbar
+  - pymdownx.arithmatex
+  - pymdownx.inlinehilite
 plugins:
   - search
   - mermaid2
 
-markdown_extensions:
-  - pymdownx.superfences
-  - pymdownx.tabbed
-  - admonition
-
 nav:
   - Home: index.md
-  - Architecture: architecture.md
-  - Design Doc: design-doc.md
-  - Login Flow: diagrams/login-sequence.md
+  - Flowcharts:
+      - Login Flow: login.md
+      - Registration Flow: register.md
+  - Features: features.md
+  - About: about.md
+  - Architecture: architecture.md  # Add this for architecture page
+  - Design Documentation: design-doc.md  # Add this for design doc
+  - Sequence Diagrams:
+      - Login Sequence: diagrams/login-sequence.md  # Add this for diagram page
+  - Daily Log: daily-log.md  # Add this for daily log

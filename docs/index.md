@@ -1,5 +1,10 @@
-# Welcome
+# Welcome to Bootcamp Docs 🚀
 
-Welcome to my documentation project.  
+This documentation contains workflows, feature descriptions, and technical details for the Bootcamp project.
 
-This is the home page of my Developer Docs Practice site.
+## Sections
+
+- [Login Flow](login.md)
+- [Registration Flow](register.md)
+- [Features](features.md)
+- [About](about.md)
