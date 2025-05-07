@@ -1,0 +1,2 @@
+[console_scripts]
+mypkg = mypkg.cli:main
