@@ -1,0 +1,16 @@
+[project]
+name = "ankita-hello-cli"
+version = "0.1.0"
+description = "A stylish CLI greeting tool using Typer and Rich"
+authors = [
+    { name = "Ankita Sinha", email = "ankitasinha2912@gmail.com" }
+]
+dependencies = [
+    "typer[all]",
+    "rich"
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.scripts]
+ankita-hello = "ankita_hello_cli.main:app"
