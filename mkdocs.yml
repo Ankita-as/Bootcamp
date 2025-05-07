@@ -1,0 +1,17 @@
+site_name: Developer Docs Practice
+theme:
+  name: material
+plugins:
+  - search
+  - mermaid2
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - admonition
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Design Doc: design-doc.md
+  - Login Flow: diagrams/login-sequence.md
