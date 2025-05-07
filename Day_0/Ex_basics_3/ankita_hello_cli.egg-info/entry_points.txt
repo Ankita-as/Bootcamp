@@ -1,0 +1,2 @@
+[console_scripts]
+ankita-hello = ankita_hello_cli.main:app
