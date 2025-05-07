@@ -9,3 +9,6 @@ This project demonstrates writing dev docs with MkDocs, diagrams, and Markdown.
 
 # To check
 # http://127.0.0.1:8000/
+#Updated site will be live at:
+
+👉 https://Ankita-as.github.io/Bootcamp/
