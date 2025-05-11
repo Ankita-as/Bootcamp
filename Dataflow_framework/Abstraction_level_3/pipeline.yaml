@@ -1,0 +1,3 @@
+pipeline:
+  - type: Abstraction_level_3.processors.snake.to_snakecase
+  - type: Abstraction_level_3.processors.upper.to_uppercase

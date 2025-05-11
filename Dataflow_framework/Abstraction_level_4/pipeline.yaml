@@ -1,0 +1,6 @@
+pipeline:
+  - type: Abstraction_level_4.processors.base_processors.to_snakecase_stream
+  - type: Abstraction_level_4.processors.stateful_processors.LineCounterProcessor
+  - type: Abstraction_level_4.processors.stream_processors.split_lines_on_delimiter
+    config:
+      delimiter: "_"

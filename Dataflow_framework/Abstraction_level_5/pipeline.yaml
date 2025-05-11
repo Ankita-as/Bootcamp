@@ -1,0 +1,31 @@
+dag:
+  start:
+    type: Abstraction_level_5.processors.base_processors.trim
+    next: tag_error_warning
+
+  tag_error_warning:
+    type: Abstraction_level_5.processors.tagging_processors.tag_error_warning
+    next:
+      - count
+      - print_lines
+
+  count:
+    type: Abstraction_level_5.processors.counting_processors.count
+    next: print_lines
+
+  print_lines:
+    type: Abstraction_level_5.processors.base_processors.print_lines
+    next: []
+
+  # New nodes for the extended pipeline
+  process_data:
+    type: Abstraction_level_5.processors.base_processors.process_data
+    next: process_next
+
+  process_next:
+    type: Abstraction_level_5.processors.counting_processors.count_lines
+    next: finish
+
+  finish:
+    type: Abstraction_level_5.processors.base_processors.finish
+    next: []

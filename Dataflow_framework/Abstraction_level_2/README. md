@@ -1,0 +1,4 @@
+To execute
+#python -m Abstraction_level_2.cli Abstraction_level_2/input.txt Abstraction_level_2/output.txt snakecase
+#to get the output run this one
+#Get-Content .\Abstraction_level_2\output.txt

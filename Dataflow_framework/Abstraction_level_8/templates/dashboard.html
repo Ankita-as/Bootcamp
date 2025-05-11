@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Processor Dashboard</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>File Processor Dashboard</h1>
+    <div id="status">
+        <p>Loading...</p>
+    </div>
+
+    <script>
+        async function fetchStatus() {
+            const res = await fetch('/status');
+            const data = await res.json();
+            document.getElementById('status').innerHTML = `
+                <p><strong>Currently Processing:</strong> ${data.currently_processing || "None"}</p>
+                <p><strong>Unprocessed:</strong> ${data.unprocessed}</p>
+                <p><strong>Under Process:</strong> ${data.underprocess}</p>
+                <p><strong>Processed:</strong> ${data.processed}</p>
+                <p><strong>Recent Files:</strong></p>
+                <ul>${data.recent_files.map(f => `<li>${f.name} @ ${f.timestamp}</li>`).join("")}</ul>
+            `;
+        }
+
+        // Fetch every 3 seconds
+        setInterval(fetchStatus, 3000);
+        fetchStatus();
+    </script>
+</body>
+</html>

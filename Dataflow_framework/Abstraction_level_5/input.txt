@@ -1,0 +1,5 @@
+ERROR failed to connect to db
+INFO server started
+WARN low memory
+INFO user logged in
+ERROR timeout
