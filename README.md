@@ -33,7 +33,7 @@ Before starting, make sure you have the following installed:
 ### Create a virtual environment
 
 ```bash
-python3 -m venv venv
+python -m venv venv
 source .venv/bin/activate  # On Windows, use `uv-venv\Scripts\activate`
 ```
 
